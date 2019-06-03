@@ -22,11 +22,27 @@ def selection_sort(arr):
 
 
 def bubble_sort(arr):
+    print('before sort:', arr)
+    # Loop through elements]
+    repeat = True
+    while repeat:
+        repeat = False
+        for i in range(0, len(arr) - 1):
+            # if current item is greater than the next item, swap items
+            if (arr[i] > arr[i+1]):
+                arr[i], arr[i+1] = arr[i+1], arr[i]
+                # Reset repeat variable so it loops at least one more time
+                repeat = True
+        print('after:', arr)
 
     return arr
 
 
+# bubble_sort([1, 5, 8, 4, 2, 9, 6, 0, 3, 7])
+
 # STRETCH: implement the Count Sort function below
+
+
 def count_sort(arr, maximum=-1):
 
     return arr
