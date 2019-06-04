@@ -48,34 +48,8 @@ def merge_sort(arr):
     return arr
 
 
-print(merge_sort([10, 9, 8, 7, 6, 5, 4, 3, 2, 1]))
+# print(merge_sort([10, 9, 8, 7, 6, 5, 4, 3, 2, 1]))
 # print(merge_sort([10, 1]))
-
-
-# def merge_sort(arr):
-#     print('merge_sort called')
-#     # TO-DO
-#     # if len(arr) > 1:
-#     # print(arr)
-#     # print(len(arr))
-#     # mid = len(arr)//2
-#     # merge_sort(arr[:mid])
-#     # merge_sort(arr[mid:])
-#     if len(arr) > 2:
-#         # print(arr)
-#         # print(len(arr))
-#         mid = len(arr)//2
-#         merge_sort(arr[:mid])
-#         merge_sort(arr[mid:])
-#     elif len(arr) == 2:
-#         # arrA, ArrB = arr.split()
-#         arrA = arr[:1]
-#         arrB = arr[1:]
-#         return merge(arrA, arrB)
-
-#     print('return', arr)  # last return will have length 1
-#     return arr
-
 
 # STRETCH: implement an in-place merge sort algorithm
 def merge_in_place(arr, start, mid, end):
